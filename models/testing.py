@@ -15,7 +15,6 @@ import utils
 
 
 def test(k, model_str, use_orderflow, console):
-    ϵ = 1e-15  # Make zero change class as small as possible
     if model_str == "deepLOB":
         use_orderflow = False
     elif model_str == "deepOF":
