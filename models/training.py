@@ -129,10 +129,10 @@ def main():
         for model_str, use_orderflow in (
             ("xgb", True),
             ("xgb", False),
-            # ("lr", True),
-            # ("lr", False),
-            # ("deepOF", True),
-            # ("deepLOB", False),
+            ("lr", True),
+            ("lr", False),
+            ("deepOF", True),
+            ("deepLOB", False),
         ):
             train(k, model_str, use_orderflow, console)
 
