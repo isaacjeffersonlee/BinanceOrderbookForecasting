@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mathematics Final Year Research Projects
+% LaTeX Template
+% Version 1.0 (31/01/24)
+%
+% This template has been adapted from: https://www.overleaf.com/latex/templates/imperial-college-report-template/wncnzptkhnbc
+% Students should feel free to adapt this template to their needs.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,11pt, twoside]{report}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=1in,bottom=1in,left=1in,right=1in,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{afterpage}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb, amsthm, bm}
+\usepackage{pdfpages}
+%Line through stuff
+\usepackage{centernot}
+\usepackage{transparent}
+\usepackage{varwidth}
+%Custom boxes
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+
+\usepackage{url}
+%Algorithm environments
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+%Multiple columns
+\usepackage{multicol}
+%Tables
+\usepackage{array}
+\usepackage{booktabs}
+%Header
+\usepackage{titleps}
+
+
+% Listings (for displaying code):
+\usepackage{listings}
+\lstset{
+    frame = single, 
+    framexleftmargin=15pt
+}
+
+% Center figure captions:
+\usepackage{caption}
+\captionsetup[figure]{labelfont={bf},name={Figure},labelsep=quad}
+\captionsetup[table]{labelfont={bf},name={Table},labelsep=quad}
+
+
+% \bm allows typing bold math:
+\usepackage{bm}
+\usepackage[normalem]{ulem}
+
+% \usepackage[colorinlistoftodos]{todonotes}
+\definecolor{mutedblue}{HTML}{1f77b4}
+% \usepackage[colorlinks=true, allcolors=mutedblue]{hyperref}
+\usepackage[colorlinks=true, allcolors=mutedblue]{hyperref}
+
+\renewcommand*{\rmdefault}{bch}
+\renewcommand*{\ttdefault}{lmtt}
+\newcommand{\citationneeded}{\textcolor{red}{[citation-needed]}}
+
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+
+% Add bigger skip between paragraphs, makes reading easier:
+\setlength{\parskip}{0.5em}
+
+% Bibliography
+\usepackage[numbers, comma, square, sort&compress]{natbib}
+\bibliographystyle{abbrvunsrtnat.bst}
+
+%----------------------------------------------------------------------------------------
+% END OF DOCUMENT CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% IMPORTANT INFORMATION TO MODIFY FOR THE TITLE PAGE
+%----------------------------------------------------------------------------------------
+\newcommand{\reporttitle}{Forecasting Returns for High Frequency Cryptocurrency Websocket Data}
+\newcommand{\reportauthor}{Isaac Jefferson Lee} % First Name and Last Name
+\newcommand{\email}{isaac.lee20@imperial.ac.uk}
+\newcommand{\CID}{01859216}
+\newcommand{\supervisor}{Dr. Mikko S. Pakkanen} % First Name and Last Name of your supervisor(s)
+\newcommand{\degreetype}{MSci Mathematics with a Year Abroad (G104)} % MSci in Mathematics, BSc in Mathematics, BSc in Mathematics with Statistics, ...
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% START OF DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% Title page
+\input{title/title.tex}
+
+% Abstract
+\begin{abstract}
+In this paper we explore various machine learning models for predicting high frequency returns
+for four of the most popular cryptocurrency perpetual futures trading pairs, BTCUSDT, ETHUSDT, MATICUSDT and SOLUSDT. 
+Specifically we train and evaluate models for classifying the direction of the smoothed mid-price change for high frequency prediction horizons.
+We introduce a novel data set, constructed from a live WebSocket stream from Binance, the worlds largest centralized cryptocurrency exchange.
+We explore how different data representations affect model performance and how performance varies for different trading pairs and prediction horizons.
+We use a mixture of traditional machine learning and deep learning models and show that simple and explainable traditional
+models can rival the performance of far larger and more complex state of the art deep learning models.
+\end{abstract}
+ 
+% % Acknowledgements
+% \clearpage
+% \section*{Acknowledgments}
+% Comment this out if not needed.
+% \clearpage
+
+% Acknowledgements
+\clearpage
+\section*{Plagiarism statement}
+The work contained in this thesis is my own work unless otherwise stated.
+
+\vspace{1em}
+\noindent \textit{Signature:} \reportauthor \\
+\textit{Date:} \today
+\clearpage
+
+% Table of contents
+\tableofcontents
+
+% Main sections of the report
+% ===========================
+% Uncomment or add folders to add your own chapters and input files.
+
+\input{introduction/introduction.tex}
+\input{orderbook_data/orderbook_data.tex}
+\input{predictive_modelling/predictive_modelling.tex}
+\input{conclusion/conclusion.tex}
+
+\appendix
+\input{appendix/extended_results.tex}
+\input{appendix/extended_panel_ols.tex}
+\input{appendix/summary_statistics.tex}
+\input{appendix/alternative_data_source.tex}
+\input{appendix/deepLOB_architecture.tex}
+% \input{appendix/hasbrouck.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{bibliography.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

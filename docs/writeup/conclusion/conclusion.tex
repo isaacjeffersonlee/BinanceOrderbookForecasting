@@ -1,0 +1,43 @@
+\chapter{Conclusion}
+\hrule
+\vspace{40pt}
+
+\section{Summary}
+In this paper we explored various machine learning models for predicting high frequency returns
+for four of the main cryptocurrency futures trading pairs, BTCUSDT, ETHUSDT, MATICUSDT and SOLUSDT. 
+We constructed a novel data set from a live WebSocket stream from Binance, the worlds largest centralized cryptocurrency exchange.
+Following \cite{CONT2013}, we defined a stationary transformation of the raw orderbook data called orderflow, 
+and motivated its definition by showing that under a stylized model of the orderbook, orderflow can be used to measure linear price impact
+of orderbook events. We then defined our modelling objective as a three-class classification problem, predicting the direction of the smoothed
+mid-price returns for several prediction horizons. For this task, we introduced several traditional machine learning and also deep learning
+models that use either the orderflow representation or the raw orderbook representation. Specifically, from traditional ML we introduced
+Logistic Regression and XGBoost models. For our deep learning models, we used the deepLOB model from \cite{ZHANG2019} and the deepOF model
+from \cite{KOLM2023} which use the raw orderbook/orderflow representations respectively.
+We trained, validated and tested our models for each trading pair and multiple prediction horizons on 8 windows from 05-02-2024 to 25-02-2024.
+We presented the results on the test set and also evaluated the feature importances for each XGBoost model.
+
+\section{Conclusions}
+From our results section we showed that we can predict the direction of smoothed mid-price returns at 
+multiple short term time horizons for our Binance WebSocket data with good performance.
+We also saw that the price features are not significantly used and we concluded that the orderflow representation is far superior
+to the raw orderbook data representation for this task. This agrees with the findings of \cite{KOLM2023}.
+We found that simpler traditional machine learning models have very competitive performance when compared with the much larger
+and more complex deep learning models. This is a significant result, since it challenges the idea that we need a large and complicated
+deep learning model to achieve state of the art performance for orderbook prediction. \cite{ZHANG2019}, \cite{KOLM2023}, \cite{LUCCHESE2024}.
+This is very good news for practical application, since simpler models are much more explainable, which is a very important quality
+for many quantitative applications.
+
+\section{Future Work}
+As previously mentioned, it would be interesting to see how our models compare with those found in \cite{ZHANG2019}, \cite{KOLM2023}, \cite{LUCCHESE2024} when applied to their data.
+
+Also, in this paper we only explored 4 trading pairs, when in fact Binance has over two-hundred perpetual futures trading pairs available.
+It would be interesting to apply the same methodology presented in this paper to a larger group of trading pairs and explore
+the differences across pairs.
+
+A major advantage of using the Binance WebSocket data is that it is freely available and live at any time. Our next steps
+would be to adapt the models presented here to be, \textit{online}, i.e. continously learning and adapting in real time.
+Then we could continuously test the models in real time for a longer period of time. This would show definitively
+whether this methodology is practical for real world trading applications.
+
+
+

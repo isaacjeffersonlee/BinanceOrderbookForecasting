@@ -1,0 +1,73 @@
+
+\chapter{DeepLOB Detailed Model Architecture}
+
+\begin{table}[ht]
+        \centering
+    \resizebox{0.98\textwidth}{!}{ \begin{tabular}{|l|l|l|}
+                \hline
+                \textbf{Layer Type} & \textbf{Parameters} & \textbf{Details} \\
+                \hline
+                \textbf{Conv 1} & & \\
+                \quad Conv2d & $1 \times 2$, 32 filters, stride $1 \times 2$ & Spatial aggregation of price and volume for each level and side.\\
+                \quad LeakyReLU & negative slope = 0.01 & Activation function.\\
+                \quad BatchNorm2d & 32 features & Normalization.\\
+                \quad Conv2d & $4 \times 1$, 32 filters & Temporal aggregation of price and volume for each level and side.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 32 features & \\
+                \quad Conv2d & $4 \times 1$, 32 filters & Temporal aggregation of price and volume for each level and side.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 32 features & \\
+                \hline
+                \textbf{Conv 2} & & \\
+                \quad Conv2d & $1 \times 2$, 32 filters, stride $1 \times 2$ & Spatial aggregation of imbalance information across sides for each level.\\
+                \quad Tanh & & Activation function.\\
+                \quad BatchNorm2d & 32 features & \\
+                \quad Conv2d & $4 \times 1$, 32 filters & Temporal aggregation of imbalance information across time for each side and level.\\
+                \quad Tanh & & \\
+                \quad BatchNorm2d & 32 features & \\
+                \quad Conv2d & $4 \times 1$, 32 filters & Temporal aggregation of imbalance information across time for each side and level.\\
+                \quad Tanh & & \\
+                \quad BatchNorm2d & 32 features & \\
+                \hline
+                \textbf{Conv 3} & & \\
+                \quad Conv2d & $1 \times 10$, 32 filters & Spatial aggregation of imbalance information across all levels.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 32 features & \\
+                \quad Conv2d & $4 \times 1$, 32 filters & Temporal aggregation of imbalance information across all levels.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 32 features & \\
+                \quad Conv2d & $4 \times 1$, 32 filters & Temporal aggregation of imbalance information across all levels.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 32 features & \\
+                \hline
+                \textbf{Inception 1} & & \\
+                \quad Conv2d & $1 \times 1$, 64 filters, padding  & Increasing dimensionality.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 64 features & \\
+                \quad Conv2d & $3 \times 1$, 64 filters, padding  & Temporal aggregation simulating a moving average with window size 3.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 64 features & \\
+                \hline
+                \textbf{Inception 2} & & \\
+                \quad Conv2d & $1 \times 1$, 64 filters, padding  & Increasing dimensionality.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 64 features & \\
+                \quad Conv2d & $5 \times 1$, 64 filters, padding  & Temporal aggregation, simulating a moving average with window size 5.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 64 features & \\
+                \hline
+                \textbf{Inception 3} & & \\
+                \quad MaxPool2d & $3 \times 1$, stride $1 \times 1$, padding $(1, 0)$ & Temporal maximum.\\
+                \quad Conv2d & $1 \times 1$, 64 filters, padding  & Increasing dimensionality.\\
+                \quad LeakyReLU & negative slope = 0.01 & \\
+                \quad BatchNorm2d & 64 features & \\
+                \hline
+                \textbf{LSTM Layer} & input size = 192, & Learn long term temporal features.\\
+                                    & hidden size = 64, num layers = 1 & \\
+                \hline
+                \textbf{Fully Connected} & input size = 64, output size = 3 & Output.\\
+                \hline
+            \end{tabular}
+    }
+        \caption{DeepLOB model architecture.}
+\end{table}

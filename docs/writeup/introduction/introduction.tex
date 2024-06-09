@@ -1,0 +1,90 @@
+\chapter{Introduction}
+\hrule
+\vspace{40pt}
+
+\section{Centralized Markets \& The Orderbook}
+Financial markets exist in many forms. Perhaps the most popular is the \textit{centralized} market, where all trading
+activity is handled by a central \textit{trusted} authority. The advantage of using a centralized market is that prices
+are kept fair and government/financial authority regulation is much easier to implement. With the advent of \textit{blockchain technology}\footnote{A blockchain is a distributed ledger/datastructure that stores transactions/contracts in a cryptographically secure and distributed way without the need for trust of a centralized organization.}, \cite{BTC2008},
+\textit{Decentralized markets} have risen in popularity. Decentralized markets allow clients to cut out the middle man and directly trade with each other.
+\textit{Automated market making} algorithms, \cite{ANGERIS2020}, are used to ensure the decentralized markets have sufficient liquidity for efficient operation.
+Decentralized exchanges have the advantage of removing any need for trust of a third party, which is an advantage for markets such as the \textit{cryptocurrency}\footnote{Cryptocurrencies are digital currencies which are transacted using blockchain technology.} market,
+where scams are common and exchanges have a tendency to collapse, \cite{FTX2024}. Of course the downside of decentralized exchanges is that they are harder to
+regulate, \cite{SALAMI2021}, and therefore are less attractive to risk averse institutional investment. In this paper we concern ourselves with centralized exchanges
+in the context of the cryptocurrency market.
+
+Centralized exchanges use a \textit{limit orderbook} to organize all buying and selling activity. 
+The limit orderbook is a datastructure that stores all unfilled buy and sell orders.
+These orders sit on the orderbook at different levels and are indexed by price. This gives us a snapshot of the current supply and demand. It is well established that for most markets,
+supply and demand are key drivers of price movement, \cite{MANKIW2014}. It then follows that we should be able to predict the future
+price movement of a security by using only the information contained in its orderbook. This is the main aim of this paper.
+
+\section{Related Works}
+Since the introduction of electronic exchanges, orderbook modelling has been a widely studied active area of research.
+Early works used parametric models such as \cite{CAO2009} who use autoregressive linear models with handcrafted features such as spread and trade imbalance
+to forecast future mid-price returns at the minute resolution or \cite{HAWKES2013} who introduce Hawkes processes for modelling orderbook events. \cite{DAT2017} use
+tensor regressions for high frequency orderbook mid-price returns forecasting. Due to their parametric nature, these models all inherently make
+assumptions on the causal relationships that drive mid-price movement. With the explosion in popularity/practicality
+of deep learning over the past few decades, \cite{RUMELHART1986}, \cite{LECUN1989}, \cite{HOCHREITER1997}, \cite{LECUN1998},  \cite{ALEX2012}, \cite{VASWANI2017},
+we have seen several deep learning approaches to the orderbook modelling task. Deep learning has the benefit of having fewer assumptions/restrictions
+on model architecture and excels at modelling large complex systems with high dimensional and non-linear dynamics, such as an orderbook.
+\cite{DIXON2017} was one of the first works to use deep neural networks for mid-price prediction (specifically they used MLPs, \cite{ROSENBLATT1958}, \cite{HORNIK1989}, with several hidden layers).
+\cite{PASSALIS2020} use a neural Bag-of-Features approach, achieving state of the art performance for high frequency mid-price returns prediction at the time.
+A breakthrough in the field was made when \cite{ZHANG2019} proposed a specialized deep learning model, coined DeepLOB, for high frequency mid-price returns prediction.
+The DeepLOB model uses CNNs, \cite{LECUN1998}, for feature extraction and LSTMs, \cite{HOCHREITER1997}, for temporal dependency extraction.
+They showed that the DeepLOB model significantly outperforms all other state of the art models of the time. The DeepLOB model
+uses the orderbook data in raw form. It turns out that this is not the best representation for predictive modelling. 
+\textit{Orderflow}, is a stationary orderbook representation, first introduced in \cite{CONT2013} in the context of linear price impact modelling.
+\cite{KOLM2023} build on the work of \cite{ZHANG2019} and adapt the DeepLOB model to use orderflow input, instead of the raw orderbook representation.
+This adapted model is named DeepOF and \cite{KOLM2023} show that it significantly outperforms the DeepLOB model. \cite{LUCCHESE2024} further
+build on this work by again modifying the DeepOF model to include extra volume features at deeper levels of the model.
+
+The majority of these papers are trained and evaluated on the LOBSTER, \cite{LOBSTER2011}, NASDAQ orderbook dataset. This is a dataset
+that has become the gold standard for orderbook modelling, since it is well researched, documented and easily accessible. 
+In this paper we turn away from traditional finance and look to model cryptocurrency orderbook price movement.
+The cryptocurrency market is still a very new area of research with far fewer published papers.
+Of note are \cite{AKYILDIRIM2023} who use traditional machine learning models and \cite{SHIN2021} who use LSTM based models
+to forecast Bitcoin mid-price movement. It is worth noting that these papers focus on forecasting movement for longer time periods,
+such as minutes, hours or even days. To our knowledge, there are no published papers on \textbf{high frequency} mid-price movement prediction, akin to
+\cite{ZHANG2019}, \cite{KOLM2023}, \cite{LUCCHESE2024}, but for \textbf{cryptocurrency data}. 
+
+\section{Overview}
+In this paper we explore various machine learning models for predicting high frequency returns
+for four of the main cryptocurrency futures trading pairs, BTCUSDT, ETHUSDT, MATICUSDT and SOLUSDT. 
+We construct a novel data set from a live WebSocket stream from Binance, the worlds largest centralized cryptocurrency exchange.
+Following \cite{CONT2013}, we define a stationary transformation of the raw orderbook data called orderflow, 
+and motivate its definition by showing that under a stylized model of the orderbook, orderflow can be used to measure linear price impact
+of orderbook events. We then define our modelling objective as a three-class classification problem, predicting the direction of the smoothed
+mid-price returns for several prediction horizons. For this task, we introduce several traditional machine learning and also deep learning
+models that use either the orderflow representation or the raw orderbook representation. Specifically, from traditional ML we introduce
+Logistic Regression and XGBoost models. For our deep learning models, we use the deepLOB model from \cite{ZHANG2019} and the deepOF model
+from \cite{KOLM2023}, which use the raw orderbook/orderflow representations respectively.
+We train, validate and test our models for each trading pair and multiple prediction horizons on eight windows from 05-02-2024 to 25-02-2024.
+We present the results on the test set and also evaluate the feature importances for each XGBoost model.
+
+\section{Contributions}
+In this paper we present two main contributions.
+\begin{enumerate}
+    \item The first major contribution we make is the application of high frequency limit orderbook modelling to cryptocurrency data.
+        Specifically we train and evaluate models for classifying the direction of the smoothed mid-price change for prediction horizons ranging from
+        $\approx 500$ milliseconds to $\approx 20$ seconds for Binance perpetual futures limit orderbook WebSocket data.
+    In the literature all similar modelling, \cite{ZHANG2019}, \cite{KOLM2023}, \cite{LUCCHESE2024}, has been done on traditional equities data, such as the NASDAQ, \cite{LOBSTER2011}.
+    To our knowledge, we are the first paper to explore high frequency orderbook forecasting on cryptocurrency data.
+    Our dataset is also unique, since it has been gathered from a live WebSocket, \cite{WEBSOCKET2011}, endpoint and to our knowledge,
+    there have been no similar papers published on forecasting live orderbook data.
+    This is exciting, since this live data is openly available and anyone can create a connection and start receiving
+    live updates. This massively lowers the barrier to entry for practical trading applications and is one of the benefits
+    of trading on cryptocurrency exchanges. Also, often times a historical dataset may be used for model evaluation but then,
+    in practice, no live feed is available with sufficient latency and or resolution. Since we are directly using data
+    stored from a live feed, we can guarantee that such a data source will be available for downstream trading strategies.
+    \item The second contribution we make is the use of XGBoost, \cite{XGBOOST2016}, for high frequency orderbook modelling. 
+    Within the quantitative finance industry, XGBoost is a very popular model and is very widely used. 
+    It has the ability to model high dimensional complex non-linear feature relationships with tighter control of overfitting
+    and greater explainability when compared to deep learning methods. For many quantitative finance applications model explainability
+    is extremely important. It is a necessity to be able to understand and explain when and why a model is not performing as expected,
+    especially when one has to answer to angry investors.
+    In this paper we show that XGBoost with orderflow features can rival state of the art deep learning models, \cite{ZHANG2019}, \cite{KOLM2023}, \cite{LUCCHESE2024}, for this application.
+\end{enumerate}
+
+
+

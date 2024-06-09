@@ -1,0 +1,62 @@
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=8cm]{title/logo.pdf}
+\vspace{40pt}
+ 
+%----------------------------------------------------------------------------------------
+
+\center % Center everything on the page
+
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+% For M3R or M4R reports, comment out as appropriate
+\textsc{\LARGE Imperial College London}\\[0.5cm] % Name of your university/college
+\textsc{\Large Department of Mathematics}\\[1.5cm] % Name of your department
+\textsc{\Large MSci Research Project}\\[0.5cm] % Name of your programme
+%\textsc{\LARGE BSc Research Project}\\[1.5cm] 
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+\makeatletter
+\HRule \\[0.6cm]
+{ \huge \bfseries \reporttitle}\\[0.6cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{center} \large
+\emph{Author:} \reportauthor \\
+\emph{Email:} \email\\
+\emph{CID:} \CID \\
+\vspace{0.5em}
+\hrulefill \\
+\vspace{0.5em}
+\emph{Supervisor:} \supervisor
+\end{center}
+\end{minipage}
+~
+\makeatother
+
+%----------------------------------------------------------------------------------------
+%	FOOTER & DATE SECTION
+%----------------------------------------------------------------------------------------
+\vfill % Fill the rest of the page with whitespace
+Submitted in partial fulfillment of the requirements for the \degreetype~at Imperial College London\\[0.5cm]
+
+\makeatletter
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+\makeatother
+
+\end{titlepage}
