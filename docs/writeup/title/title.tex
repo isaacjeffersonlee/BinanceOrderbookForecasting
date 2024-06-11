@@ -35,28 +35,32 @@
 %	AUTHOR SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}{0.4\textwidth}
-\begin{center} \large
-\emph{Author:} \reportauthor \\
-\emph{Email:} \email\\
-\emph{CID:} \CID \\
-\vspace{0.5em}
+\begin{minipage}{0.45\textwidth}
+\begin{center} \large 
+    \begin{flushleft}
+\textbf{Supervisor:} \supervisor \\
+\textbf{Author:} \reportauthor \\
+\textbf{Email:} \email \\
+\textbf{CID:} \CID \\
+\vspace{11pt}
 \hrulefill \\
-\vspace{0.5em}
-\emph{Supervisor:} \supervisor
+\vspace{11pt}
+        
+    \end{flushleft}
 \end{center}
 \end{minipage}
-~
 \makeatother
 
+\vspace{11pt}
+\makeatletter
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+\makeatother
 %----------------------------------------------------------------------------------------
 %	FOOTER & DATE SECTION
 %----------------------------------------------------------------------------------------
 \vfill % Fill the rest of the page with whitespace
 Submitted in partial fulfillment of the requirements for the \degreetype~at Imperial College London\\[0.5cm]
+The source code for the models found in this paper can be found at: \sourcecode
 
-\makeatletter
-{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
-\makeatother
 
 \end{titlepage}

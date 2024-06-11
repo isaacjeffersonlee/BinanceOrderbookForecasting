@@ -1,0 +1,231 @@
+\begin{thebibliography}{44}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Nakamoto(2008)]{BTC2008}
+S.~Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock \url{https://bitcoin.org/bitcoin.pdf}, 2008.
+
+\bibitem[Angeris and Chitra(2020)]{ANGERIS2020}
+G.~Angeris and T.~Chitra.
+\newblock Improved price oracles: Constant function market makers.
+\newblock \emph{arXiv Pre-print arXiv:2003.10001}, 2020.
+
+\bibitem[Reiff et~al.(2024)Reiff, Rasure, and Velasquez]{FTX2024}
+N.~Reiff, E.~Rasure, and V.~Velasquez.
+\newblock The collapse of ftx: What went wrong with the crypto exchange?
+\newblock \url{https://www.investopedia.com/what-went-wrong-with-ftx-6828447}, June 2024.
+
+\bibitem[Salami(2021)]{SALAMI2021}
+I.~Salami.
+\newblock Challenges and approaches to regulating decentralized finance.
+\newblock \emph{AJIL Unbound}, 115:\penalty0 425–429, 2021.
+
+\bibitem[Mankiw(2014)]{MANKIW2014}
+N.~G. Mankiw.
+\newblock \emph{Principles of Economics}.
+\newblock Cengage Learning, 7th edition, 2014.
+\newblock Chapter 4: The Market Forces of Supply and Demand.
+
+\bibitem[Cao et~al.(2009)Cao, Hansch, and Wang]{CAO2009}
+C.~Cao, O.~Hansch, and X.~Wang.
+\newblock The information content of an open limit-order book.
+\newblock \emph{Journal of Futures Markets}, 29\penalty0 (1):\penalty0 16--41, 2009.
+
+\bibitem[Bacry and Muzy(2013)]{HAWKES2013}
+E.~Bacry and J.~F. Muzy.
+\newblock Hawkes model for price and trades high-frequency dynamics.
+\newblock \emph{Quantitative Finance, 14}, 2013.
+
+\bibitem[Tran et~al.(2017)Tran, Iosifidis, Kanniainen, and Gabbouj]{DAT2017}
+D.~T. Tran, A.~Iosifidis, J.~Kanniainen, and M.~Gabbouj.
+\newblock Temporal attention augmented bilinear network for financial time-series data analysis.
+\newblock \emph{CoRR}, abs/1712.00975, 2017.
+
+\bibitem[Rumelhart. et~al.(1986)Rumelhart., Hinton, and Williams]{RUMELHART1986}
+D.~E. Rumelhart., G.~E. Hinton, and R.~J. Williams.
+\newblock Learning representations by back-propagating errors.
+\newblock \emph{Nature}, 323\penalty0 (6088):\penalty0 533--536, 1986.
+
+\bibitem[LeCun et~al.(1989)LeCun, Boser, Denker, Henderson, Howard, Hubbard, and Jackel]{LECUN1989}
+Y.~LeCun, B.~Boser, J.~Denker, D.~Henderson, R.~Howard, W.~Hubbard, and L.~Jackel.
+\newblock Handwritten digit recognition with a back-propagation network.
+\newblock In D.~Touretzky, editor, \emph{Advances in Neural Information Processing Systems}, volume~2. Morgan-Kaufmann, 1989.
+
+\bibitem[Hochreiter and Schmidhuber(1997)]{HOCHREITER1997}
+S.~Hochreiter and J.~Schmidhuber.
+\newblock Long short-term memory.
+\newblock \emph{Neural computation}, 9:\penalty0 1735--80, 12 1997.
+
+\bibitem[LeCun et~al.(1998)LeCun, Bottou, Bengio, and Haffner.]{LECUN1998}
+Y.~LeCun, L.~Bottou, Y.~Bengio, and P.~Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock \emph{Proceedings of the IEEE}, 86\penalty0 (11):\penalty0 2278--2324, 1998.
+
+\bibitem[Krizhevsky et~al.(2012)Krizhevsky, Sutskever, and Hinton]{ALEX2012}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In F.~Pereira, C.~Burges, L.~Bottou, and K.~Weinberger, editors, \emph{Advances in Neural Information Processing Systems}, volume~25. Curran Associates, Inc., 2012.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{VASWANI2017}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez, L.~u. Kaiser, and I.~Polosukhin.
+\newblock Attention is all you need.
+\newblock In I.~Guyon, U.~V. Luxburg, S.~Bengio, H.~Wallach, R.~Fergus, S.~Vishwanathan, and R.~Garnett, editors, \emph{Advances in Neural Information Processing Systems}, volume~30. Curran Associates, Inc., 2017.
+
+\bibitem[Dixon et~al.(2017)Dixon, Klabjan, and Bang]{DIXON2017}
+M.~Dixon, D.~Klabjan, and J.~H. Bang.
+\newblock Classification-based financial markets prediction using deep neural networks.
+\newblock \emph{Pre-print}, 2017.
+
+\bibitem[Rosenblatt(1958)]{ROSENBLATT1958}
+F.~Rosenblatt.
+\newblock The perceptron: a probabilistic model for information storage and organization in the brain.
+\newblock \emph{Psychological review}, 65 6:\penalty0 386--408, 1958.
+
+\bibitem[Hornik et~al.(1989)Hornik, Stinchcombe, and White]{HORNIK1989}
+K.~Hornik, M.~Stinchcombe, and H.~White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock \emph{Neural Networks}, 2\penalty0 (5):\penalty0 359--366, 1989.
+
+\bibitem[Passalis et~al.(2018)Passalis, Tefas, Kanniainen, Gabbouj, and Iosifidis]{PASSALIS2020}
+N.~Passalis, A.~Tefas, J.~Kanniainen, M.~Gabbouj, and A.~Iosifidis.
+\newblock Temporal bag-of-features learning for predicting mid price movements using high frequency limit order book data.
+\newblock \emph{IEEE Transactions on Emerging Topics in Computational Intelligence}, 4\penalty0 (6):\penalty0 774--785, 2018.
+
+\bibitem[Zhang et~al.(2019)Zhang, Zohren, and Roberts]{ZHANG2019}
+Z.~Zhang, S.~Zohren, and S.~Roberts.
+\newblock Deeplob: Deep convolutional neural networks for limit order books.
+\newblock \emph{IEEE Transactions on Signal Processing}, 67\penalty0 (11):\penalty0 3001–3012, June 2019.
+
+\bibitem[Cont et~al.(2013)Cont, Kukanov, and Stoikov]{CONT2013}
+R.~Cont, A.~Kukanov, and S.~Stoikov.
+\newblock The price impact of order book events.
+\newblock \emph{Journal of Financial Econometrics}, 12\penalty0 (1):\penalty0 47–88, June 2013.
+
+\bibitem[Kolm et~al.(2023)Kolm, Turiel, and Westray]{KOLM2023}
+P.~N. Kolm, J.~Turiel, and N.~Westray.
+\newblock Deep order flow imbalance: Extracting alpha at multiple horizons from the limit order book.
+\newblock \emph{Mathematical Finance}, 33\penalty0 (4):\penalty0 1044--1081, 2023.
+
+\bibitem[Lucchese et~al.(2024)Lucchese, Pakkanen, and Veraart]{LUCCHESE2024}
+L.~Lucchese, M.~S. Pakkanen, and A.~E. Veraart.
+\newblock The short-term predictability of returns in order book markets: A deep learning perspective.
+\newblock \emph{International Journal of Forecasting}, 2024.
+
+\bibitem[Huang and Polak(2011)]{LOBSTER2011}
+R.~Huang and T.~Polak.
+\newblock Lobster: Limit order book reconstruction system.
+\newblock \emph{Information Systems \& Economics eJournal}, 2011.
+
+\bibitem[Akyildirim et~al.(2023)Akyildirim, Cepni, Corbet, and Uddin]{AKYILDIRIM2023}
+E.~Akyildirim, O.~Cepni, S.~Corbet, and G.~S. Uddin.
+\newblock Forecasting mid-price movement of bitcoin futures using machine learning.
+\newblock \emph{Annals of Operations Research}, 330\penalty0 (1):\penalty0 553--584, 2023.
+
+\bibitem[Shin et~al.(2021)Shin, Mohaisen, and Kim]{SHIN2021}
+M.~Shin, D.~Mohaisen, and J.~Kim.
+\newblock Bitcoin price forecasting via ensemble-based lstm deep learning networks.
+\newblock In \emph{2021 International Conference on Information Networking (ICOIN)}, pages 603--608, 2021.
+
+\bibitem[Fette and Melnikov(2011)]{WEBSOCKET2011}
+I.~Fette and A.~Melnikov.
+\newblock The websocket protocol.
+\newblock \url{https://www.rfc-editor.org/rfc/rfc6455}, December 2011.
+
+\bibitem[Chen and Guestrin(2016)]{XGBOOST2016}
+T.~Chen and C.~Guestrin.
+\newblock Xgboost: A scalable tree boosting system.
+\newblock \emph{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}, page 785–794, 2016.
+
+\bibitem[Pan and Misra(2021)]{ARITRA2021}
+A.~Pan and A.~K. Misra.
+\newblock A comprehensive study on bid-ask spread and its determinants in india.
+\newblock \emph{Cogent Economics \& Finance}, 9\penalty0 (1):\penalty0 1898735, 2021.
+
+\bibitem[Gould et~al.(2013)Gould, Porter, Williams, McDonald, Fenn, and Howison]{MARTIN2013}
+M.~D. Gould, M.~A. Porter, S.~Williams, M.~McDonald, D.~J. Fenn, and S.~D. Howison.
+\newblock Limit order books.
+\newblock \emph{Quantitative Finance}, 13\penalty0 (11):\penalty0 1709--1742, 2013.
+
+\bibitem[Tully(2023)]{TULLY2023}
+S.~Tully.
+\newblock How binance really operates: The world's largest crypto exchange boasts vast profits, hefty influencer payouts, and a ticking time bomb on its balance sheet.
+\newblock \emph{Fortune}, March 28 2023.
+\newblock Archived from the original on April 9, 2023.
+
+\bibitem[Fielding et~al.(1999)Fielding, Gettys, Mogul, Frystyk, Masinter, Leach, and Berners-Lee]{HTTP1999}
+R.~Fielding, J.~Gettys, J.~Mogul, H.~Frystyk, L.~Masinter, P.~Leach, and T.~Berners-Lee.
+\newblock Hypertext transfer protocol -- http/1.1.
+\newblock \url{https://www.rfc-editor.org/rfc/rfc2616}, June 1999.
+\newblock Obsoleted by RFCs 7230-7235.
+
+\bibitem[Tsantekidis et~al.(2017)Tsantekidis, Passalis, Tefas, Kanniainen, Gabbouj, and Iosifidis]{AVRAAM2017}
+A.~Tsantekidis, N.~Passalis, A.~Tefas, J.~Kanniainen, M.~Gabbouj, and A.~Iosifidis.
+\newblock Forecasting stock prices from the limit order book using convolutional neural networks.
+\newblock \emph{2017 IEEE 19th Conference on Business Informatics (CBI)}, 01:\penalty0 7--12, 2017.
+
+\bibitem[Cox(1958)]{COX1958}
+D.~R. Cox.
+\newblock The regression analysis of binary sequences.
+\newblock \emph{Journal of the Royal Statistical Society: Series B (Methodological)}, 20\penalty0 (2):\penalty0 215--232, 1958.
+
+\bibitem[Hastie et~al.(2001)Hastie, Tibshirani, and Friedman]{HASTIE2001}
+T.~Hastie, R.~Tibshirani, and J.~Friedman.
+\newblock \emph{The Elements of Statistical Learning}.
+\newblock Springer Series in Statistics. Springer New York Inc., New York, NY, USA, 2001.
+
+\bibitem[Robbins(1951)]{ROBBINS1951}
+H.~E. Robbins.
+\newblock A stochastic approximation method.
+\newblock \emph{Annals of Mathematical Statistics}, 22:\penalty0 400--407, 1951.
+
+\bibitem[Kingma and Ba(2017)]{ADAM2017}
+D.~P. Kingma and J.~Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock In \emph{Proceedings of the 3rd International Conference for Learning Representations, San Diego, 2015}, 2017.
+
+\bibitem[Kauderer-Abrams(2017)]{ABRAMS2017}
+E.~Kauderer-Abrams.
+\newblock Quantifying translation-invariance in convolutional neural networks.
+\newblock \emph{Pre-print}, 2017.
+
+\bibitem[Jordan(1997)]{JORDAN1997}
+M.~I. Jordan.
+\newblock Chapter 25 - serial order: A parallel distributed processing approach.
+\newblock In J.~W. Donahoe and V.~{Packard Dorsel}, editors, \emph{Neural-Network Models of Cognition}, volume 121 of \emph{Advances in Psychology}, pages 471--495. North-Holland, 1997.
+
+\bibitem[Pascanu et~al.(2013)Pascanu, Mikolov, and Bengio]{PASCANU2013}
+R.~Pascanu, T.~Mikolov, and Y.~Bengio.
+\newblock On the difficulty of training recurrent neural networks.
+\newblock \emph{Pre-print}, 2013.
+
+\bibitem[Gers. et~al.(1999)Gers., Schmidhuber, and Cummins]{SCHMIDHUBER1999}
+F.~Gers., J.~Schmidhuber, and F.~Cummins.
+\newblock Learning to forget: continual prediction with lstm.
+\newblock In \emph{1999 Ninth International Conference on Artificial Neural Networks ICANN 99. (Conf. Publ. No. 470)}, volume~2, pages 850--855 vol.2, 1999.
+
+\bibitem[Maas(2013)]{MAAS2013}
+A.~L. Maas.
+\newblock Rectifier nonlinearities improve neural network acoustic models.
+\newblock In \emph{Rectifier Nonlinearities Improve Neural Network Acoustic Models}, 2013.
+
+\bibitem[Paszke and Chintala(2017)]{CROSSENTROPYLOSS}
+A.~Paszke and S.~Chintala.
+\newblock Pytorch cross entropy loss.
+\newblock \url{https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html}, 2017.
+
+\bibitem[Lin et~al.(2014)Lin, Chen, and Yan]{MIN2014}
+M.~Lin, Q.~Chen, and S.~Yan.
+\newblock Network in network.
+\newblock In \emph{Proceedings of iclr2014}, 2014.
+
+\bibitem[Paszke et~al.(2017)Paszke, Gross, Chintala, Chanan, Yang, DeVito, Lin, Desmaison, Antiga, and Lerer]{PYTORCH2017}
+A.~Paszke, S.~Gross, S.~Chintala, G.~Chanan, E.~Yang, Z.~DeVito, Z.~Lin, A.~Desmaison, L.~Antiga, and A.~Lerer.
+\newblock Automatic differentiation in pytorch.
+\newblock \emph{Pre-print}, 2017.
+
+\end{thebibliography}
