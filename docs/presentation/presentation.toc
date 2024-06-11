@@ -1,0 +1,9 @@
+\babel@toc {UKenglish}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Orderbook Data}{10}{0}{2}
+\beamer@sectionintoc {3}{Modelling Objective}{16}{0}{3}
+\beamer@sectionintoc {4}{Model Theory}{21}{0}{4}
+\beamer@sectionintoc {5}{Orderbook Features}{34}{0}{5}
+\beamer@sectionintoc {6}{Methodology}{44}{0}{6}
+\beamer@sectionintoc {7}{Results}{49}{0}{7}
+\beamer@sectionintoc {8}{Conclusion}{84}{0}{8}

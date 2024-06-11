@@ -1,0 +1,176 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akyildirim et~al.(2023)Akyildirim, Cepni, Corbet, and Uddin]{AKYILDIRIM2023}
+Erdinc Akyildirim, Oguzhan Cepni, Shaen Corbet, and Gazi~Salah Uddin.
+\newblock Forecasting mid-price movement of bitcoin futures using machine learning.
+\newblock \emph{Annals of Operations Research}, 330\penalty0 (1):\penalty0 553--584, 2023.
+\newblock \doi{10.1007/s10479-021-04205-x}.
+\newblock URL \url{https://doi.org/10.1007/s10479-021-04205-x}.
+
+\bibitem[Bacry and Muzy(2013)]{HAWKES2013}
+E.~Bacry and J.~F Muzy.
+\newblock Hawkes model for price and trades high-frequency dynamics.
+\newblock \emph{Quantitative Finance, 14}, 2013.
+
+\bibitem[Cao et~al.(2009)Cao, Hansch, and Wang]{CAO2009}
+Charles Cao, Oliver Hansch, and Xiaoxin Wang.
+\newblock The information content of an open limit-order book.
+\newblock \emph{Journal of Futures Markets}, 29\penalty0 (1):\penalty0 16--41, 2009.
+\newblock \doi{https://doi.org/10.1002/fut.20334}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/fut.20334}.
+
+\bibitem[Chen and Guestrin(2016)]{XGBOOST2016}
+Tianqi Chen and Carlos Guestrin.
+\newblock Xgboost: A scalable tree boosting system.
+\newblock \emph{Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining}, page 785–794, 2016.
+\newblock \doi{10.1145/2939672.2939785}.
+\newblock URL \url{https://doi.org/10.1145/2939672.2939785}.
+
+\bibitem[Cont et~al.(2013)Cont, Kukanov, and Stoikov]{CONT2013}
+R.~Cont, A.~Kukanov, and S.~Stoikov.
+\newblock The price impact of order book events.
+\newblock \emph{Journal of Financial Econometrics}, 12\penalty0 (1):\penalty0 47–88, June 2013.
+\newblock ISSN 1479-8417.
+\newblock \doi{10.1093/jjfinec/nbt003}.
+\newblock URL \url{http://dx.doi.org/10.1093/jjfinec/nbt003}.
+
+\bibitem[Cox(1958)]{COX1958}
+D.~R. Cox.
+\newblock The regression analysis of binary sequences.
+\newblock \emph{Journal of the Royal Statistical Society: Series B (Methodological)}, 20\penalty0 (2):\penalty0 215--232, 1958.
+\newblock \doi{https://doi.org/10.1111/j.2517-6161.1958.tb00292.x}.
+\newblock URL \url{https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.2517-6161.1958.tb00292.x}.
+
+\bibitem[Fette and Melnikov(2011)]{WEBSOCKET2011}
+I.~Fette and A.~Melnikov.
+\newblock The websocket protocol.
+\newblock \url{https://www.rfc-editor.org/rfc/rfc6455}, December 2011.
+\newblock URL \url{https://www.rfc-editor.org/rfc/rfc6455}.
+
+\bibitem[Hastie et~al.(2001)Hastie, Tibshirani, and Friedman]{HASTIE2001}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock \emph{The Elements of Statistical Learning}.
+\newblock Springer Series in Statistics. Springer New York Inc., New York, NY, USA, 2001.
+
+\bibitem[Hochreiter and Schmidhuber(1997)]{HOCHREITER1997}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock \emph{Neural computation}, 9:\penalty0 1735--80, 12 1997.
+\newblock \doi{10.1162/neco.1997.9.8.1735}.
+
+\bibitem[Hornik et~al.(1989)Hornik, Stinchcombe, and White]{HORNIK1989}
+Kurt Hornik, Maxwell Stinchcombe, and Halbert White.
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock \emph{Neural Networks}, 2\penalty0 (5):\penalty0 359--366, 1989.
+\newblock ISSN 0893-6080.
+\newblock \doi{https://doi.org/10.1016/0893-6080(89)90020-8}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/0893608089900208}.
+
+\bibitem[Jordan(1997)]{JORDAN1997}
+Michael~I. Jordan.
+\newblock Chapter 25 - serial order: A parallel distributed processing approach.
+\newblock In John~W. Donahoe and Vivian {Packard Dorsel}, editors, \emph{Neural-Network Models of Cognition}, volume 121 of \emph{Advances in Psychology}, pages 471--495. North-Holland, 1997.
+\newblock \doi{https://doi.org/10.1016/S0166-4115(97)80111-2}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0166411597801112}.
+
+\bibitem[Kauderer-Abrams(2017)]{ABRAMS2017}
+Eric Kauderer-Abrams.
+\newblock Quantifying translation-invariance in convolutional neural networks.
+\newblock \emph{Pre-print}, 2017.
+
+\bibitem[Kingma and Ba(2017)]{ADAM2017}
+Diederik~P. Kingma and Jimmy Ba.
+\newblock Adam: A method for stochastic optimization.
+\newblock In \emph{Proceedings of the 3rd International Conference for Learning Representations, San Diego, 2015}, 2017.
+
+\bibitem[Kolm et~al.(2023)Kolm, Turiel, and Westray]{KOLM2023}
+Petter~N. Kolm, Jeremy Turiel, and Nicholas Westray.
+\newblock Deep order flow imbalance: Extracting alpha at multiple horizons from the limit order book.
+\newblock \emph{Mathematical Finance}, 33\penalty0 (4):\penalty0 1044--1081, 2023.
+\newblock \doi{https://doi.org/10.1111/mafi.12413}.
+\newblock URL \url{https://onlinelibrary.wiley.com/doi/abs/10.1111/mafi.12413}.
+
+\bibitem[LeCun et~al.(1998)LeCun, Bottou, Bengio, and Haffner.]{LECUN1998}
+Yann LeCun, L{\'e}on Bottou, Yoshua Bengio, and Patrick Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock \emph{Proceedings of the IEEE}, 86\penalty0 (11):\penalty0 2278--2324, 1998.
+
+\bibitem[Lin et~al.(2014)Lin, Chen, and Yan]{MIN2014}
+Min Lin, Qiang Chen, and Shuicheng Yan.
+\newblock Network in network.
+\newblock In \emph{Proceedings of iclr2014}, 2014.
+
+\bibitem[Lucchese et~al.(2024)Lucchese, Pakkanen, and Veraart]{LUCCHESE2024}
+Lorenzo Lucchese, Mikko~S. Pakkanen, and Almut~E.D. Veraart.
+\newblock The short-term predictability of returns in order book markets: A deep learning perspective.
+\newblock \emph{International Journal of Forecasting}, 2024.
+\newblock ISSN 0169-2070.
+\newblock \doi{https://doi.org/10.1016/j.ijforecast.2024.02.001}.
+\newblock URL \url{https://www.sciencedirect.com/science/article/pii/S0169207024000062}.
+
+\bibitem[Mankiw(2014)]{MANKIW2014}
+N.~Gregory Mankiw.
+\newblock \emph{Principles of Economics}.
+\newblock Cengage Learning, 7th edition, 2014.
+\newblock Chapter 4: The Market Forces of Supply and Demand.
+
+\bibitem[Pascanu et~al.(2013)Pascanu, Mikolov, and Bengio]{PASCANU2013}
+Razvan Pascanu, Tomas Mikolov, and Yoshua Bengio.
+\newblock On the difficulty of training recurrent neural networks.
+\newblock \emph{Pre-print}, 2013.
+
+\bibitem[Paszke et~al.(2017)Paszke, Gross, Chintala, Chanan, Yang, DeVito, Lin, Desmaison, Antiga, and Lerer]{PYTORCH2017}
+Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer.
+\newblock Automatic differentiation in pytorch.
+\newblock \emph{Pre-print}, 2017.
+
+\bibitem[Podareanu et~al.(2019)Podareanu, Codreanu, Aigner, Leeuwen, and Weinberg]{PODAREANU2019}
+Damian Podareanu, Valeriu Codreanu, Sandra Aigner, Caspar Leeuwen, and Volker Weinberg.
+\newblock Best practice guide - deep learning.
+\newblock \emph{Pre-print}, 02 2019.
+\newblock \doi{10.13140/RG.2.2.31564.05769}.
+
+\bibitem[Robbins(1951)]{ROBBINS1951}
+Herbert~E. Robbins.
+\newblock A stochastic approximation method.
+\newblock \emph{Annals of Mathematical Statistics}, 22:\penalty0 400--407, 1951.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:16945044}.
+
+\bibitem[Rumelhart. et~al.(1986)Rumelhart., Hinton, and Williams]{RUMELHART1986}
+David~E Rumelhart., Geoffrey~E. Hinton, and Ronald~J. Williams.
+\newblock Learning representations by back-propagating errors.
+\newblock \emph{Nature}, 323\penalty0 (6088):\penalty0 533--536, 1986.
+\newblock \doi{10.1038/323533a0}.
+\newblock URL \url{https://doi.org/10.1038/323533a0}.
+
+\bibitem[Shin et~al.(2021)Shin, Mohaisen, and Kim]{SHIN2021}
+MyungJae Shin, David Mohaisen, and Joongheon Kim.
+\newblock Bitcoin price forecasting via ensemble-based lstm deep learning networks.
+\newblock In \emph{2021 International Conference on Information Networking (ICOIN)}, pages 603--608, 2021.
+\newblock \doi{10.1109/ICOIN50884.2021.9333853}.
+
+\bibitem[Tsantekidis et~al.(2017)Tsantekidis, Passalis, Tefas, Kanniainen, Gabbouj, and Iosifidis]{AVRAAM2017}
+Avraam Tsantekidis, Nikolaos Passalis, Anastasios Tefas, Juho Kanniainen, Moncef Gabbouj, and Alexandros Iosifidis.
+\newblock Forecasting stock prices from the limit order book using convolutional neural networks.
+\newblock \emph{2017 IEEE 19th Conference on Business Informatics (CBI)}, 01:\penalty0 7--12, 2017.
+\newblock \doi{10.1109/CBI.2017.23}.
+
+\bibitem[Venkatachalam(2019)]{RNNIMAGE2024}
+Mahendran Venkatachalam.
+\newblock Recurrent neural networks – remembering what’s important, gotensor, 2019.
+\newblock \url{https://gotensor.com/2019/02/28/recurrent-neural-networks-remembering-whats-important/}, [Accessed: 2024-06-10].
+
+\bibitem[Zhang et~al.(2019)Zhang, Zohren, and Roberts]{ZHANG2019}
+Zihao Zhang, Stefan Zohren, and Stephen Roberts.
+\newblock Deeplob: Deep convolutional neural networks for limit order books.
+\newblock \emph{IEEE Transactions on Signal Processing}, 67\penalty0 (11):\penalty0 3001–3012, June 2019.
+\newblock ISSN 1941-0476.
+\newblock \doi{10.1109/tsp.2019.2907260}.
+\newblock URL \url{http://dx.doi.org/10.1109/TSP.2019.2907260}.
+
+\end{thebibliography}
